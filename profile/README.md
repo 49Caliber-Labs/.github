@@ -6,7 +6,7 @@
 [![Open Source DTN](https://img.shields.io/badge/MeshMule--Core-MIT_Open_Source-10b981.svg)](https://github.com/49Caliber-Labs/MeshMule-core)
 [![Commercial Platform](https://img.shields.io/badge/BiteWindow_Vector7-34%2C651_USGS_Waterways-00d2ff.svg)](https://github.com/49Caliber-Labs/bitewindow-vector7)
 [![RF Architecture](https://img.shields.io/badge/RF_Band-902--928_MHz_LoRa_%2F_Meshtastic-ffb800.svg)](https://github.com/49Caliber-Labs/MeshMule-core)
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub_Sponsors_%26_Grants-ff1e56.svg)](https://github.com/sponsors/J-O-E-L-T)
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub_Sponsors_%26_Grants-ff1e56.svg)](https://github.com/J-O-E-L-T#-github-sponsors--research-grants-why-back-my-work)
 
 ---
 
@@ -63,7 +63,7 @@ We design and deploy **off-grid 915 MHz LoRa delay-tolerant communication protoc
 
 **49Caliber Labs** collaborates with federal and state resource agencies, university research laboratories, conservation non-profits, and Search-and-Rescue organizations to deploy open-source **MeshMule** sensor networks and custom telemetry hardware/software bundles.
 
-- **GitHub Sponsors:** **[github.com/sponsors/J-O-E-L-T](https://github.com/sponsors/J-O-E-L-T)**
+- **Sponsorship & Research Grant Matrix:** **[github.com/J-O-E-L-T (Sponsorship & Grant Tiers)](https://github.com/J-O-E-L-T#-github-sponsors--research-grants-why-back-my-work)**
 - **Founder & Principal Systems Architect:** **[Joel T. (`@J-O-E-L-T`)](https://github.com/J-O-E-L-T)**
 - **Flagship Open-Source Repository:** **[github.com/49Caliber-Labs/MeshMule-core](https://github.com/49Caliber-Labs/MeshMule-core)**
 - **Flagship Commercial Repository:** **[github.com/49Caliber-Labs/bitewindow-vector7](https://github.com/49Caliber-Labs/bitewindow-vector7)**
