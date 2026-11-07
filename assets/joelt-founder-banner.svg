@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="jtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0a1628" />
+      <stop offset="100%" stop-color="#071e26" />
+    </linearGradient>
+    <linearGradient id="jtTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <style>
+      .jt-name { font: 800 38px 'Segoe UI', Roboto, sans-serif; letter-spacing: 2px; fill: url(#jtTitle); }
+      .jt-role { font: 700 14px 'Consolas', monospace; fill: #10b981; letter-spacing: 1.8px; }
+      .jt-bio { font: 400 14.5px 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; }
+      .stat-lbl { font: 600 10px 'Consolas', monospace; fill: #94a3b8; letter-spacing: 1px; }
+      .stat-val { font: 800 15px 'Consolas', monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="280" rx="16" fill="url(#jtBg)" stroke="#1e3a5f" stroke-width="2" />
+
+  <g transform="translate(48, 42)">
+    <rect x="0" y="0" width="380" height="24" rx="12" fill="#0b2545" stroke="#38bdf8" stroke-width="1" />
+    <text x="16" y="16" font-family="Consolas, monospace" font-size="11" font-weight="700" fill="#7dd3fc">FOUNDER &amp; PRINCIPAL ARCHITECT • 49CALIBER LABS, INC.</text>
+
+    <text x="0" y="68" class="jt-name">JOEL T.  (@J-O-E-L-T)</text>
+    <text x="2" y="94" class="jt-role">915 MHz LORA MESH TELEMETRY  •  ATMOSPHERIC &amp; HYDROLOGICAL PHYSICS  •  FULL-STACK SYSTEMS</text>
+
+    <text x="2" y="124" class="jt-bio">Architect of MeshMule-Core (MIT open-source sub-GHz delay-tolerant telemetry &amp; barometric array engine)</text>
+    <text x="2" y="144" class="jt-bio">and BiteWindow Vector7 (commercial 7-vector hydrological forecasting &amp; off-grid tactical comms platform).</text>
+
+    <g transform="translate(0, 166)">
+      <rect x="0" y="0" width="250" height="52" rx="8" fill="#081526" stroke="#10b981" stroke-width="1.2" />
+      <text x="16" y="20" class="stat-lbl">OPEN-SOURCE PROTOCOL</text>
+      <text x="16" y="40" class="stat-val" fill="#34d399">MeshMule-Core (32B DTN)</text>
+
+      <rect x="268" y="0" width="265" height="52" rx="8" fill="#081526" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="284" y="20" class="stat-lbl">COMMERCIAL FLAGSHIP</text>
+      <text x="284" y="40" class="stat-val" fill="#38bdf8">BiteWindow V7 (34.6K Rivers)</text>
+
+      <rect x="551" y="0" width="265" height="52" rx="8" fill="#081526" stroke="#f59e0b" stroke-width="1.2" />
+      <text x="567" y="20" class="stat-lbl">DISTRIBUTED PHYSICS</text>
+      <text x="567" y="40" class="stat-val" fill="#fbbf24">∇P Baro Array + RF Tomo</text>
+
+      <rect x="834" y="0" width="265" height="52" rx="8" fill="#081526" stroke="#ec4899" stroke-width="1.2" />
+      <text x="850" y="20" class="stat-lbl">BACKCOUNTRY LIFE-SAFETY</text>
+      <text x="850" y="40" class="stat-val" fill="#f472b6">GPS-Denied Canyon SAR</text>
+    </g>
+  </g>
+</svg>

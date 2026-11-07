@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#031214" />
+      <stop offset="55%" stop-color="#062329" />
+      <stop offset="100%" stop-color="#041524" />
+    </linearGradient>
+    <linearGradient id="mmTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#a7f3d0" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <pattern id="mmGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#0d9488" stroke-width="0.6" stroke-opacity="0.22" />
+    </pattern>
+    <style>
+      .mm-title { font: 800 42px 'Segoe UI', Roboto, Helvetica, sans-serif; letter-spacing: 2.5px; fill: url(#mmTitle); }
+      .mm-sub { font: 700 13.5px 'Consolas', monospace; fill: #34d399; letter-spacing: 2px; }
+      .mm-desc { font: 400 14.5px 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; }
+      .byte-box { font: 700 11px 'Consolas', monospace; }
+      @keyframes signalBeam {
+        to { stroke-dashoffset: -60; }
+      }
+      .beam { stroke-dasharray: 10 5; animation: signalBeam 2s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="url(#mmBg)" stroke="#0d9488" stroke-width="2" />
+  <rect width="1200" height="320" rx="16" fill="url(#mmGrid)" />
+
+  <!-- Left Content -->
+  <g transform="translate(52, 46)">
+    <rect x="0" y="0" width="420" height="24" rx="12" fill="#064e3b" stroke="#10b981" stroke-width="1" />
+    <text x="16" y="16" font-family="Consolas, monospace" font-size="11" font-weight="700" fill="#a7f3d0">MIT OPEN SOURCE  •  868 / 915 MHz LORA CITIZEN SCIENCE</text>
+
+    <text x="0" y="72" class="mm-title">MESHMULE-CORE</text>
+    <text x="2" y="98" class="mm-sub">32-BYTE DTN TELEMETRY  //  ∇P BAROMETRIC ARRAY  //  RF TOMOGRAPHY  //  SAR</text>
+
+    <text x="2" y="130" class="mm-desc">Zero-dependency TypeScript &amp; embedded protocol engine turning commodity Meshtastic</text>
+    <text x="2" y="150" class="mm-desc">LoRa transceivers into store-and-forward canyon data mules and atmospheric physics arrays.</text>
+
+    <!-- 32-Byte Frame Strip Preview -->
+    <g transform="translate(0, 174)">
+      <text x="0" y="14" font-family="Consolas, monospace" font-size="11" font-weight="700" fill="#94a3b8">32-BYTE (256-BIT) DETERMINISTIC WIRE FRAME LAYOUT [0xA1 / 0xB2]:</text>
+      <rect x="0" y="22" width="72" height="34" rx="4" fill="#065f46" stroke="#34d399" />
+      <text x="36" y="43" text-anchor="middle" class="byte-box" fill="#ffffff">[0] 0xA1</text>
+
+      <rect x="78" y="22" width="110" height="34" rx="4" fill="#0f2942" stroke="#38bdf8" />
+      <text x="133" y="43" text-anchor="middle" class="byte-box" fill="#7dd3fc">[2..5] NodeID</text>
+
+      <rect x="194" y="22" width="115" height="34" rx="4" fill="#0f2942" stroke="#38bdf8" />
+      <text x="251" y="43" text-anchor="middle" class="byte-box" fill="#7dd3fc">[6..9] UTC Min</text>
+
+      <rect x="315" y="22" width="165" height="34" rx="4" fill="#1e293b" stroke="#a855f7" />
+      <text x="397" y="43" text-anchor="middle" class="byte-box" fill="#d8b4fe">[10..25] Packed Sensors</text>
+
+      <rect x="486" y="22" width="118" height="34" rx="4" fill="#422006" stroke="#f59e0b" />
+      <text x="545" y="43" text-anchor="middle" class="byte-box" fill="#fde68a">[26..29] MAC32</text>
+
+      <rect x="610" y="22" width="96" height="34" rx="4" fill="#450a0a" stroke="#f87171" />
+      <text x="658" y="43" text-anchor="middle" class="byte-box" fill="#fca5a5">[30..31] CRC16</text>
+    </g>
+  </g>
+
+  <!-- Right Diagram: Canyon Sensor -> Mobile Mule -> Ridge Repeater -->
+  <g transform="translate(830, 44)">
+    <rect x="0" y="0" width="325" height="232" rx="12" fill="#041a24" stroke="#0d9488" stroke-width="1.5" />
+    <text x="162" y="24" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" font-weight="700" fill="#34d399">OPPORTUNISTIC DTN TOPOLOGY</text>
+
+    <!-- Canyon Sensor -->
+    <rect x="20" y="168" width="92" height="44" rx="6" fill="#064e3b" stroke="#10b981" />
+    <text x="66" y="187" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="700" fill="#ffffff">CANYON NODE</text>
+    <text x="66" y="202" text-anchor="middle" font-family="Consolas, monospace" font-size="9.5" fill="#6ee7b7">0xA1 Logger</text>
+
+    <!-- Mobile Data Mule -->
+    <rect x="116" y="102" width="92" height="44" rx="6" fill="#0c2d48" stroke="#38bdf8" />
+    <text x="162" y="121" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="700" fill="#ffffff">MOBILE MULE</text>
+    <text x="162" y="136" text-anchor="middle" font-family="Consolas, monospace" font-size="9.5" fill="#7dd3fc">Store &amp; Forward</text>
+
+    <!-- Ridge Repeater / Agency Gateway -->
+    <rect x="212" y="38" width="94" height="44" rx="6" fill="#3b1d06" stroke="#f59e0b" />
+    <text x="259" y="57" text-anchor="middle" font-family="Consolas, monospace" font-size="10" font-weight="700" fill="#ffffff">RIDGE GATEWAY</text>
+    <text x="259" y="72" text-anchor="middle" font-family="Consolas, monospace" font-size="9.5" fill="#fde68a">GeoJSON / OGC</text>
+
+    <!-- Animated Signal Links -->
+    <line x1="66" y1="168" x2="140" y2="146" stroke="#10b981" stroke-width="2.2" class="beam" />
+    <line x1="185" y1="102" x2="250" y2="82" stroke="#38bdf8" stroke-width="2.2" class="beam" />
+  </g>
+</svg>

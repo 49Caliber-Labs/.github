@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050c1a" />
+      <stop offset="100%" stop-color="#0a192f" />
+    </linearGradient>
+    <linearGradient id="div1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#062825" />
+      <stop offset="100%" stop-color="#05161c" />
+    </linearGradient>
+    <linearGradient id="div2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#08223e" />
+      <stop offset="100%" stop-color="#061428" />
+    </linearGradient>
+    <style>
+      .h-title { font: 800 18px 'Segoe UI', Roboto, sans-serif; letter-spacing: 2px; fill: #f8fafc; }
+      .h-sub { font: 600 11.5px 'Consolas', monospace; fill: #38bdf8; letter-spacing: 1.2px; }
+      .div-title { font: 800 16px 'Segoe UI', Roboto, sans-serif; letter-spacing: 1px; }
+      .div-badge { font: 700 11px 'Consolas', monospace; }
+      .item-text { font: 500 13px 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; }
+      .item-code { font: 700 12px 'Consolas', monospace; }
+      @keyframes packetMove {
+        to { stroke-dashoffset: -48; }
+      }
+      .data-bus { stroke-dasharray: 8 4; animation: packetMove 1.8s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="430" rx="14" fill="url(#panelBg)" stroke="#1e3a5f" stroke-width="2" />
+
+  <!-- Top Corporate Header Node -->
+  <rect x="310" y="22" width="580" height="68" rx="10" fill="#0c213d" stroke="#38bdf8" stroke-width="1.8" />
+  <text x="600" y="49" text-anchor="middle" class="h-title">49CALIBER LABS, INC. (CALIFORNIA C-CORP)</text>
+  <text x="600" y="72" text-anchor="middle" class="h-sub">DUAL-DIVISION R&amp;D &amp; COMMERCIAL OPERATING ARCHITECTURE</text>
+
+  <!-- Connector Lines from Top Node to Divisions -->
+  <path d="M 460 90 L 460 115 L 270 115 L 270 140" fill="none" stroke="#10b981" stroke-width="2" class="data-bus" />
+  <path d="M 740 90 L 740 115 L 930 115 L 930 140" fill="none" stroke="#38bdf8" stroke-width="2" class="data-bus" />
+
+  <!-- Division I: Left Box (Open Source) -->
+  <g transform="translate(36, 140)">
+    <rect width="465" height="260" rx="12" fill="url(#div1Grad)" stroke="#10b981" stroke-width="1.8" />
+    <rect x="0" y="0" width="465" height="44" rx="12" fill="#063730" />
+    <text x="20" y="27" class="div-title" fill="#34d399">DIVISION I: MESHMULE-CORE (OPEN R&amp;D)</text>
+    <rect x="355" y="11" width="94" height="22" rx="6" fill="#059669" />
+    <text x="402" y="26" text-anchor="middle" class="div-badge" fill="#ffffff">MIT LICENSE</text>
+
+    <text x="22" y="74" class="item-text"><tspan class="item-code" fill="#34d399">[0xA1]</tspan> 32-Byte Canyon Sensor Harvest Protocol (SipHash/FNV MAC)</text>
+    <text x="22" y="102" class="item-text"><tspan class="item-code" fill="#34d399">[0xB2]</tspan> 32-Byte Ridge-Mule 24h USGS Hydrograph &amp; Alert Broadcast</text>
+    <text x="22" y="130" class="item-text"><tspan class="item-code" fill="#34d399">[∇P]</tspan>   2D Barometric Phased-Array Squall &amp; Wind-Shift Solver</text>
+    <text x="22" y="158" class="item-text"><tspan class="item-code" fill="#34d399">[SAR]</tspan>  GPS-Denied Barometric + 915 MHz RSSI Trilateration</text>
+    <text x="22" y="186" class="item-text"><tspan class="item-code" fill="#34d399">[TOMO]</tspan> Passive 868/915 MHz RF Link-Margin Tomography</text>
+    <text x="22" y="214" class="item-text"><tspan class="item-code" fill="#34d399">[OGC]</tspan>  RFC 7946 GeoJSON, CSV &amp; SensorThings Agency Gateway</text>
+    <text x="22" y="242" class="item-code" fill="#6ee7b7">Target: NSF • NLnet • USGS • NOAA • USFS / CAL FIRE • SAR</text>
+  </g>
+
+  <!-- Center Hardware & RF Bridge Hub -->
+  <g transform="translate(523, 198)">
+    <rect width="154" height="144" rx="12" fill="#091526" stroke="#f59e0b" stroke-width="1.8" />
+    <text x="77" y="28" text-anchor="middle" class="div-badge" fill="#fbbf24">SHARED RF BRIDGE</text>
+    <line x1="16" y1="38" x2="138" y2="38" stroke="#334155" stroke-width="1" />
+    <text x="77" y="58" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#e2e8f0">868 / 915 MHz LoRa</text>
+    <text x="77" y="76" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#94a3b8">ESP32-S3 • nRF52840</text>
+    <text x="77" y="94" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#38bdf8">Native BLE GATT</text>
+    <text x="77" y="112" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#34d399">USB-C OTG Serial</text>
+    <text x="77" y="130" text-anchor="middle" font-family="Consolas, monospace" font-size="10.5" fill="#fbbf24">PORTNUM 256 / MULE1</text>
+  </g>
+
+  <!-- Horizontal Bidirectional Bus Lines -->
+  <line x1="501" y1="255" x2="523" y2="255" stroke="#10b981" stroke-width="2.5" class="data-bus" />
+  <line x1="501" y1="285" x2="523" y2="285" stroke="#f59e0b" stroke-width="2.5" class="data-bus" />
+  <line x1="677" y1="255" x2="699" y2="255" stroke="#38bdf8" stroke-width="2.5" class="data-bus" />
+  <line x1="677" y1="285" x2="699" y2="285" stroke="#f59e0b" stroke-width="2.5" class="data-bus" />
+
+  <!-- Division II: Right Box (Commercial Platform) -->
+  <g transform="translate(699, 140)">
+    <rect width="465" height="260" rx="12" fill="url(#div2Grad)" stroke="#38bdf8" stroke-width="1.8" />
+    <rect x="0" y="0" width="465" height="44" rx="12" fill="#0a2e52" />
+    <text x="20" y="27" class="div-title" fill="#38bdf8">DIVISION II: BITEWINDOW VECTOR7</text>
+    <rect x="335" y="11" width="114" height="22" rx="6" fill="#0284c7" />
+    <text x="392" y="26" text-anchor="middle" class="div-badge" fill="#ffffff">PROPRIETARY</text>
+
+    <text x="22" y="74" class="item-text"><tspan class="item-code" fill="#38bdf8">[DIAL]</tspan> 360° Solunar, Barometric &amp; Thermal Bite Chronometer</text>
+    <text x="22" y="102" class="item-text"><tspan class="item-code" fill="#38bdf8">[USGS]</tspan> 34,651 Indexed U.S. Waterways &amp; Live Gauge Ingestion</text>
+    <text x="22" y="130" class="item-text"><tspan class="item-code" fill="#38bdf8">[TRI]</tspan>  Virtual Waterway Triangulation for Ungauged Tributaries</text>
+    <text x="22" y="158" class="item-text"><tspan class="item-code" fill="#38bdf8">[DECK]</tspan> High-Contrast Off-Grid 915 MHz Tactical Radio Deck</text>
+    <text x="22" y="186" class="item-text"><tspan class="item-code" fill="#38bdf8">[VAULT]</tspan> 100% Local-First Encrypted Waypoints &amp; Catch Log Vault</text>
+    <text x="22" y="214" class="item-text"><tspan class="item-code" fill="#38bdf8">[APK]</tspan>  Native Android Wrapper (BLE GATT + USB-C OTG) &amp; PWA</text>
+    <text x="22" y="242" class="item-code" fill="#7dd3fc">Market: 54M+ U.S. Anglers • Backcountry Navigators • Guides</text>
+  </g>
+</svg>
